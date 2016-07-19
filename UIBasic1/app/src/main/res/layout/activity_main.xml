@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.harapekoyuki.uibasic1.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editname"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="プロフィール設定"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="お名前"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/editname"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="お電話番号"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/editemail"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="パスワード"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="性別"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="持っている端末"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/neither"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送信"
+        android:id="@+id/button"
+        android:layout_below="@+id/other"
+        android:layout_marginTop="24dp"
+        android:layout_alignEnd="@+id/editpassword"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editemail"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignEnd="@+id/editname"
+        android:layout_alignStart="@+id/editname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editphone"
+        android:layout_below="@+id/editemail"
+        android:layout_alignEnd="@+id/editemail"
+        android:layout_alignStart="@+id/editemail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editpassword"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignEnd="@+id/editphone"
+        android:layout_alignStart="@+id/editphone" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男性"
+        android:id="@+id/male"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignStart="@+id/editpassword" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女性"
+        android:id="@+id/female"
+        android:layout_below="@+id/male"
+        android:layout_alignStart="@+id/male" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="どちらでもない"
+        android:id="@+id/neither"
+        android:layout_below="@+id/female"
+        android:layout_alignStart="@+id/female" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iPhone"
+        android:id="@+id/iphone"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_toEndOf="@+id/textView" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:id="@+id/android"
+        android:layout_below="@+id/iphone"
+        android:layout_alignStart="@+id/iphone" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="その他"
+        android:id="@+id/other"
+        android:layout_below="@+id/android"
+        android:layout_toEndOf="@+id/textView" />
+
+</RelativeLayout>
